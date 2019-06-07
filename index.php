@@ -7,20 +7,31 @@
     <title>Grady</title>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://codeseven.github.io/toastr/build/toastr.min.css"/>
     <style>
         .card:hover {
             box-shadow: 0 0 114px 0 rgba(0, 0, 0, 0.08), 0 30px 25px 0 rgba(0, 0, 0, 0.05);
             transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateY(-5px);
         }
+        .navbar {
+            background: linear-gradient(90deg, rgba(33, 206, 148, 1) 0%, rgba(83, 103, 255, 1) 100%);;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Grady</a>
+    <nav class="navbar navbar-expand-lg d-flex">
+        <div class="p-2">
+            <a class="navbar-brand" href="/">
+                <h3 class="text-bold text-white mb-0">Grady</h3>
+            </a>
+        </div>
+        <div class="ml-auto p-2">
+            <a href="https://github.com/androidneha/grady" target="_blank"><i class="fab fa-github text-white fa-2x"></i></a>
+        </div>
     </nav>
-    <div class="container mt-4">
+    <div class="container mt-4 p-0">
+        <h3 class="text-center my-5">Get coolest handpicked gradient colors collection palette for your next project, alternatively copy css.</h3>
         <div class="row">
             <?php
             foreach ($colors as $color) {
@@ -59,117 +70,10 @@
             ?>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 30,
-                    "density": {
-                        "enable": true,
-                        "value_area": 900
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "grab"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 140,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
-    <script src="toast.js"></script>
+    <script src="https://codeseven.github.io/toastr/build/toastr.min.js"></script>
     <script>
         function copyToClipboard(css) {
             let $temp = $("<input>");
@@ -177,12 +81,7 @@
             $temp.val(css).select();
             document.execCommand("copy");
             $temp.remove();
-            let toast = (new iqwerty).toast.Toast();
-            toast.setText('CSS Code Copied!').stylize({
-                background: 'pink',
-                color: 'black',
-                'box-shadow': '0 0 50px rgba(0, 0, 0, .7)'
-            }).show();
+            toastr.info('CSS code successfully copied! 😊', 'Yo', {positionClass: 'toast-bottom-right'})
         }
     </script>
 </body>
